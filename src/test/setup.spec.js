@@ -5,8 +5,6 @@ const chai = require('chai')
 const sinonChai = require('sinon-chai')
 const winston = require('winston')
 
-
-const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
 process.env.PORT = 3000
