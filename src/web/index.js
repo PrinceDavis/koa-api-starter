@@ -1,6 +1,5 @@
 'use strict'
 
-require('./../db')
 const http = require('http')
 const app = require('./server')
 const config = require('./../config')

@@ -1,4 +1,4 @@
 'use strict'
 module.exports = {
-  mongoDB: require('./mongodb')
+  image: require('./image')
 }
