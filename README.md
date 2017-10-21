@@ -11,4 +11,6 @@ Simple file structure to get started developing web and api application using no
 * Should you another http framework please remove the koa boilerplate in server.js
 * Install dependencies as you see fit
 * Start web server: `docker-compose up` (Optional)
+
+* Check that the package versions are right for your project
 * Happ coding ):
