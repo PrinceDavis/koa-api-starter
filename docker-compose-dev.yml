@@ -9,5 +9,5 @@ services:
     networks: 
       - smart-network
     volumes:
-      - .:/home/app/smartadmin
-      - /home/app/smartadmin/node_modules
+      - .:/home/app/code
+      - /home/app/code/node_modules

@@ -6,10 +6,10 @@ RUN useradd --user-group --create-home --shell /bin/false app && \
   
 ENV HOME=/home/app
 
-COPY ./  $HOME/web/
+COPY ./  $HOME/code/
 
 RUN chown -R app:app $HOME/*
 USER app
-WORKDIR $HOME/web
+WORKDIR $HOME/code
 RUN npm install
 ENTRYPOINT ["npm", "run", "dev"]
