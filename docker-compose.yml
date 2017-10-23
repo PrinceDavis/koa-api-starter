@@ -6,8 +6,6 @@ services:
       dockerfile: docker/dev/Dockerfile
     ports:
       - '3000:3000'
-    networks: 
-      - smart-network
     volumes:
       - ./:/home/app/code
       - /home/app/code/node_modules

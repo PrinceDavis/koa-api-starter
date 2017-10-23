@@ -1,8 +1,7 @@
 FROM node:8.5.0
 MAINTAINER Ossaija Thankgod<codebugsolved@gmail.com>
 RUN useradd --user-group --create-home --shell /bin/false app && \
-  npm install nodemon --global \
-  apt-get update
+  apt-get update && npm install nodemon --global && npm set save-exact true 
   
 ENV HOME=/home/app
 

@@ -18,11 +18,18 @@
       "expect"
     ]
   },
+  "engines": {
+    "node": "8.5.0"
+  },
   "scripts": {
     "test": "mocha**/*.spec.js",
     "test-watch": "nodemon --exec \"npm test\"",
-    "dev": "standard --fix && nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "standard --fix && nodemon -L src/index.js",
+    "start": "node src/index.js",
+    "check-coverage": "nyc check-coverage --lines 95 --functions 100",
+    "commit": "git-cz",
+    "cover": "nyc npm t",
+    "precommit": "npm run cover && npm run check-coverage && commit"
   },
   "author": "Ossaija ThankGod <codebugsolved@gmail.com> (https://github.com/princedavis)",
   "license": "ISC",
@@ -31,5 +38,10 @@
   },
   "devDependencies": {
     
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
