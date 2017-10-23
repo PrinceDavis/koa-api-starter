@@ -15,7 +15,7 @@ USER app
 WORKDIR $HOME/code
 
 RUN npm install dotenv joi koa koa-bodyparser koa-router koa2-cors \
-  semver winston mongoose -S
+  semver winston mongoose koa-request-validation -S
 Run npm install standard chai commitizen cz-conventional-changelog \
   husky mocha nyc sinon sinon-chai -D
 
